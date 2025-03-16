@@ -19,7 +19,7 @@ const AboutUs = () => {
                     )) }
                     </div>
                 </div>
-                <img className="h-[80%] w-full" src="/about/Image (3).png" alt="About" />
+                <img className="md:h-[80%] h-auto object-fit w-full" src="/about/Image (3).png" alt="About" />
             </div>
         </section>
     )

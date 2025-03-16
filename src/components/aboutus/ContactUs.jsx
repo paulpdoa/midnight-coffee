@@ -2,7 +2,7 @@ import BackBtn from "../BackBtn"
 
 const ContactUs = () => {
     return (
-        <section className="flex justify-center my-10 md:-mt-16 -mt-10">
+        <section className="flex justify-center my-10 md:-mt-16 mt-9">
             <div className="md:w-[80%] w-full">
                 <h1 className="heading-color font-semibold text-4xl">Contact Us</h1>
                 <form className="md:w-1/2 w-full flex flex-col gap-5">
