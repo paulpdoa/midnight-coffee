@@ -11,15 +11,15 @@ const Feedback = () => {
 
     return (
         <section className="my-10 flex justify-center">
-            <div className="w-[80%]">
+            <div className="md:w-[80%] w-full">
                 <div className="flex items-center justify-between">  
-                    <h1 className="heading-color font-bold text-4xl">Feedback</h1>
+                    <h1 className="heading-color font-bold md:text-4xl text-2xl">Feedback</h1>
                     <NextBtn path='/advocacy' />
                 </div>
-                <div className="grid grid-cols-3 gap-5 mt-5 relative">
+                <div className="grid md:grid-cols-3 grid-cols-1 gap-5 mt-5 relative">
                 { feedbacks.map(feedback => (
-                    <div className="border rounded-md p-7 z-50">
-                        <h2 className="font-semibold text-2xl">"{feedback.comment}"</h2>
+                    <div key={feedback.id} className="border rounded-md md:p-7 p-4 z-50">
+                        <h2 className="font-semibold md:text-2xl text-lg">"{feedback.comment}"</h2>
                         <div className="grid grid-cols-2 items-center my-4">
                             <div className="flex items-center gap-3">
                                 <img src={feedback.photo} alt={feedback.name} />

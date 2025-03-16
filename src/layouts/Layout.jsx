@@ -13,10 +13,10 @@ const Layout = () => {
     }, [pathname]);
 
     return (
-        <main className="container mx-auto">
+        <main className="md:container md:mx-auto mx-10">
             <Navbar />
             <Outlet />
-            <div className="bg-gray-200 h-[77px] w-full"></div>
+            <div className="bg-gray-200 md:h-[77px] h-[50px] w-full"></div>
             <Footer />
         </main> 
     )

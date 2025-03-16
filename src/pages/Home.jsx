@@ -7,7 +7,7 @@ import WhatToKnow from "../components/home/WhatToKnow";
 
 const Home = () => {
     return (
-        <main className="mx-5">
+        <main className="md:mx-5">
             <FutureBegins />
             <WhatsNew />
             <AboutUs />

@@ -7,14 +7,14 @@ const OurCoffeeBeans = () => {
 
     return (
         <section className="my-10 flex justify-center">
-            <div className="w-[80%] grid grid-cols-2 gap-5">
+            <div className="md:w-[80%] w-full grid md:grid-cols-2 grid-cols-1 gap-5">
                 <div className="my-5">
-                    <h1 className="heading-color font-bold text-4xl">Our Coffee Beans:</h1>
+                    <h1 className="heading-color font-bold md:text-4xl text-2xl">Our Coffee Beans:</h1>
                     <div className="my-5">
                     { coffees.map(coffee => (
                         <div key={coffee.id} className="mt-4">
-                            <h2 className="font-bold text-gray-500">{coffee.title}</h2>
-                            <p className="text-gray-400 mt-1">{coffee.description}</p>
+                            <h2 className="font-bold text-gray-500 md:text-base text-sm">{coffee.title}</h2>
+                            <p className="text-gray-400 mt-1 md:text-base text-xs">{coffee.description}</p>
                         </div>
                     )) }
                     </div>
