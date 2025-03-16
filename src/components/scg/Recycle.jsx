@@ -50,19 +50,19 @@ const Recycle = () => {
 
     return (
         <section className="my-10 flex justify-center">
-            <div className="w-[80%] z-50">
+            <div className="md:w-[80%] w-full z-50">
                 { recycleSteps.map(recycle => (
                     <div key={recycle.id}>
-                        <h2 className="heading-color font-semibold text-xl">{ recycle.id }. {recycle.title}</h2>
-                        <p className="font-medium">{recycle.description}</p>
+                        <h2 className="heading-color font-semibold md:text-xl text-lg">{ recycle.id }. {recycle.title}</h2>
+                        <p className="font-medium md:text-base text-sm">{recycle.description}</p>
 
                         <div className="flex justify-center items-center">
-                            <img className="w-1/3 mt-5 self-center" src={recycle.photo} alt={recycle.title} />
+                            <img className="md:w-1/3 mt-5 self-center" src={recycle.photo} alt={recycle.title} />
                         </div>
-                        <h3 className="font-medium">Steps:</h3>
-                        <ul className="my-7">
+                        <h3 className="font-medium md:mt-0 mt-4">Steps:</h3>
+                        <ul className="md:my-7 my-3">
                             { recycle.steps.map(step => (
-                                <li>{step}</li>
+                                <li className="md:text-base text-sm">{step}</li>
                             )) }
                         </ul>                       
                     </div>

@@ -4,18 +4,18 @@ import NextBtn from "../NextBtn"
 const UpcycledPaper = () => {
     return (
         <section className="my-10 flex justify-center">
-            <div className="w-[80%]">
-                <h1 className="heading-color font-bold text-4xl">Upcycled Paper</h1>
+            <div className="md:w-[80%] w-full">
+                <h1 className="heading-color font-bold md:text-4xl text-2xl">Upcycled Paper</h1>
                 <img className="rounded-md mt-5" src="/advocacy/Image (2).png" alt="Upcycled Paper" />
 
                 <div className="mt-16">
-                    <h2 className="heading-color font-semibold text-3xl">How to Make Upcycled Paper with Scent Coffee Grounds</h2>
-                    <p className="mt-5">Recycle used coffee grounds into eco-friendly handmade paper!</p>
+                    <h2 className="heading-color font-semibold md:text-3xl text-xl">How to Make Upcycled Paper with Scent Coffee Grounds</h2>
+                    <p className="mt-5 md:text-base text-sm">Recycle used coffee grounds into eco-friendly handmade paper!</p>
                 </div>
                 
                 <div className="mt-7">
                     <h3 className="font-semibold">Materials:</h3>
-                    <ul className="mt-7">
+                    <ul className="md:mt-7 mt-2 md:text-base text-sm">
                         <li>Dried spent coffee grounds.</li>
                         <li>Recycled paper scraps</li>
                         <li>Blender</li>
@@ -28,7 +28,7 @@ const UpcycledPaper = () => {
 
                 <div className="mt-7">
                     <h3 className="font-semibold">Steps:</h3>
-                    <ul className="mt-7 flex flex-col gap-7 w-1/2 text-justify">
+                    <ul className="md:mt-7 mt-2 md:text-base text-sm flex flex-col gap-7 md:w-1/2 w-full text-justify">
                         <li>Make Pulp: Soak shredded paper scraps in water for more than an hour before blending into a smooth pulp. Add the coffee grounds and blend briefly.</li>
                         <li>Pour and spread the pulp onto a large container filled with water</li>
                         <li>Next is dip and filter with the mesh screen, ensuring a uniform layer.</li>
@@ -40,7 +40,7 @@ const UpcycledPaper = () => {
                     </ul>
                 </div>
 
-                <div className="flex items-center gap-2 justify-end">
+                <div className="flex items-center gap-2 justify-end md:mt-0 mt-5">
                     <BackBtn path='/' />
                     <NextBtn path='/scg' />
                 </div>

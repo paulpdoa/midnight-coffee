@@ -8,13 +8,13 @@ const AboutUs = () => {
 
     return (
         <section className="my-10 flex justify-center mb-0">
-            <div className="w-[80%] grid grid-cols-2 gap-24">
+            <div className="md:w-[80%] w-full grid md:grid-cols-2 grid-cols-1 md:gap-24 gap-3">
                 <div className="my-5">
-                    <h1 className="heading-color font-bold text-5xl">About us</h1>
-                    <div className="my-20">
+                    <h1 className="heading-color font-bold md:text-5xl text-3xl">About us</h1>
+                    <div className="md:my-20 my-5">
                     { paragraphs.map(paragraph => (
                         <div key={paragraph.id} className="mt-4">
-                            <p className="mt-1 font-semibold text-justify">{paragraph.description}</p>
+                            <p className="mt-1 font-semibold text-justify md:text-base text-sm">{paragraph.description}</p>
                         </div>
                     )) }
                     </div>

@@ -12,16 +12,16 @@ const Merch = () => {
 
     return (
         <section className="my-10 flex justify-center">
-            <div className="w-[80%] z-50">
-                <h1 className="heading-color font-bold text-3xl">Exclusive Merchandise</h1>
+            <div className="md:w-[80%] w-full z-50">
+                <h1 className="heading-color font-bold md:text-3xl text-2xl">Exclusive Merchandise</h1>
                 <div className="my-16">
                     { products.map(product => (
-                        <div key={product.id} className="flex justify-between items-center">
-                            <img className={`object-fit w-1/3 ${product.id % 2 == 0 ? 'order-last' : 'order-first'}`} src={product.photo} alt={product.title} />
-                            <div className="flex flex-col gap-5 w-1/2">
-                                <h2 className="heading-color text-2xl font-semibold">{product.title}</h2>
+                        <div key={product.id} className="flex md:flex-row flex-col md:justify-between justify-center items-center mt-5 md:mt-0">
+                            <img className={`object-fit md:w-1/3 ${product.id % 2 == 0 ? 'md:order-last' : 'md:order-first'}`} src={product.photo} alt={product.title} />
+                            <div className="flex flex-col md:gap-5 gap-2 md:w-1/2 md:mt-0 mt-5">
+                                <h2 className="heading-color md:text-2xl text-lg font-semibold">{product.title}</h2>
                                 <span className="text-sm">{product.price}</span>
-                                <p className="text-gray-500">{product.description}</p>                        
+                                <p className="text-gray-500 md:text-base text-sm">{product.description}</p>                        
                             </div>
                         </div>
                     )) }
